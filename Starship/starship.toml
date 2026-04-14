@@ -1,0 +1,25 @@
+format = """
+[](white)\
+$username\
+$directory\
+$git_branch\
+$character\
+$arrow
+"""
+
+[username]
+style_user = "fg:black bg:white"
+format = "[$user]($style_user)"
+
+[directory]
+style = "fg:black bg:white"
+format = "[$path]($style)"
+
+[git_branch]
+symbol = ""
+style = "fg:black bg:white"
+format = "[$symbol $branch]"
+
+[character]
+success_symbol = "[](white)"
+error_symbol = "[](red)"
