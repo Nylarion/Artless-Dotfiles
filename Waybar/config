@@ -39,9 +39,9 @@
   },
 
   "network": {
-    "format-wifi": "  {essid}",
-    "format-ethernet": "󰈀  Connected",
-    "format-disconnected": "⚠ Disconnected",
+    "format-wifi": " ",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "⚠",
     "on-click": "networkmanager_dmenu -theme ~/Descargas/Arc-Dark.rasi"
   },
 
@@ -79,3 +79,4 @@
     }
   },
 }
+
