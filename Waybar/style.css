@@ -8,20 +8,16 @@
 
 window#waybar {
   /* Gradiente suave de negro a rojo */
-  background-color: rgba(31,31,31,0);
+  background-color: transparent;
   color: #ffffff;
 }
 
-#waybar{
-
-  background: rgb(31,31,31);
-}
 
 #workspaces{
-  padding: 2px 15px;
-  margin: 0px;
-  border-radius: 0px 0px 5px 0px;
-  background: rgba(31, 31, 31, 1); /* negro translúcido */
+  padding: 3px 15px;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background: rgba(31, 31, 31, 1);
   color: #ffffff;
   transition: background 0.3s ease;
 }
@@ -30,7 +26,94 @@ window#waybar {
   padding: 6px 15px;
   margin: 0px;
   border-radius: 0px 0px 5px 0px;
-  background: rgba(31, 31, 31, 1); /* negro translúcido */
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+#custom-launcher:hover {
+  background: rgba(230, 57, 70, 0.75);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-wlogout {
+  padding: 6px 15px;
+  margin: 5px 0px 0px 0px;
+  border-radius: 0px;
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+#clock{
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 0px 0px 0px;
+}
+
+#custom-wlogout{
+  border-radius: 0px 5px 5px 0px;
+  margin: 5px 5px 0px 0px;
+}
+
+#pulseaudio{
+  border-radius: 5px 0px 0px 5px;
+  margin: 5px 0px 0px 0px;
+}
+
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-wlogout:hover {
+  background: rgb(45, 45, 45);
+  color: #fff0f0;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  text-shadow: none;
+  background: rgb(45, 45, 45);
+}
+
+#tray {
+  border-radius: 7px;
+  margin: 4px 6px;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+#battery.warning {
+  color: #f4a261;
+}
+
+#battery.critical {
+  color: #e63946;
+}
+
+
+/*
+
+BARRA BLOQUE:
+
+#workspaces{
+  padding: 2px 15px;
+  margin: 0px;
+  border-radius: 0px 0px 5px 0px;
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+#custom-launcher{
+  padding: 6px 15px;
+  margin: 0px;
+  border-radius: 0px 0px 5px 0px;
+  background: rgba(31, 31, 31, 1);
   color: #ffffff;
   transition: background 0.3s ease;
 }
@@ -49,7 +132,7 @@ window#waybar {
   padding: 6px 15px;
   margin: 0px;
   border-radius: 0px;
-  background: rgba(31, 31, 31, 1); /* negro translúcido */
+  background: rgba(31, 31, 31, 1);
   color: #ffffff;
   transition: background 0.3s ease;
 }
@@ -62,31 +145,63 @@ window#waybar {
   border-radius: 0px 0px 0px 5px;
 }
 
-#clock:hover,
-#battery:hover,
-#network:hover,
-#pulseaudio:hover,
-#custom-wlogout:hover {
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff0f0;
-}
+*/
 
-#workspaces button:hover {
-  background: transparent;
-  text-shadow: none;
-}
 
-#tray {
-  border-radius: 7px;
-  margin: 4px 6px;
-  padding: 6px 12px;
+/*
+
+BARRA FLOTANTE:
+
+#workspaces{
+  padding: 3px 15px;
+  margin: 5px 0px 0px 10px;
+  border-radius: 5px 5px 5px 5px;
+  background: rgba(31, 31, 31, 1);
   color: #ffffff;
+  transition: background 0.3s ease;
 }
 
-#battery.warning {
-  color: #f4a261;
+#custom-launcher{
+  padding: 6px 15px;
+  margin: 0px;
+  border-radius: 0px 0px 5px 0px;
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+  transition: background 0.3s ease;
 }
 
-#battery.critical {
-  color: #e63946;
+#custom-launcher:hover {
+  background: rgba(230, 57, 70, 0.75);
+  color: rgba(0, 0, 0, 0.7);
 }
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-wlogout {
+  padding: 6px 15px;
+  margin: 5px 0px 0px 0px;
+  border-radius: 0px;
+  background: rgba(31, 31, 31, 1);
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+#clock{
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 0px 0px 0px;
+}
+
+#custom-wlogout{
+  border-radius: 0px 5px 5px 0px;
+  margin: 5px 10px 0px 0px;
+}
+
+#pulseaudio{
+  border-radius: 5px 0px 0px 5px;
+  margin: 5px 0px 0px 0px;
+}
+
+*/
